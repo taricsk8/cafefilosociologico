@@ -1,12 +1,13 @@
-/* Estilos básicos para o cabeçalho */
+/* Estilos básicos */
 body {
-    margin:01;
-    font-family: 'alfaSlabone', serif;
-    background-color: #fffffff6;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
 }
 
+/* Estilos do cabeçalho */
 header {
-    background-color: #4a4a4a;
+    background-color: #006400; /* Verde escuro representando a Amazônia */
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -55,19 +56,17 @@ header {
 }
 
 .cta-button .btn {
-    background-color: #940505;
+    background-color: #FF6347; /* Tom de vermelho representando o Cerrado */
     color: white;
-    padding: 0.05rem 0.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    border-radius: 1px;
+    border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-
-
 }
 
 .cta-button .btn:hover {
-    background-color: #d43f63;
+    background-color: #FF4500; /* Vermelho mais intenso para hover */
 }
 
 /* Efeito para o cabeçalho ao rolar a página */
@@ -75,19 +74,38 @@ header.scrolled {
     background-color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-    /* styles.css */
-img {
-    border-radius: 15px; /* Ajuste o valor conforme necessário */
-    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+
+/* Estilos para o conteúdo */
+section {
+    padding: 2rem;
+    margin-top: 5rem; /* Adiciona espaço para o cabeçalho fixo */
 }
-/* styles.css */
-img {
-    width: 10%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+
+h1, h2 {
+    color: #005f6a; /* Cor representando o Pantanal */
+    font-weight: 600;
 }
-/* styles.css */
+
+/* Estilo para imagens */
 img {
-    width: 10%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15px; /* Bordas arredondadas */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos adicionais */
+.centered {
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #e0f7fa; /* Tom de azul claro representando a Mata Atlântica */
+    border-radius: 5px;
 }

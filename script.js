@@ -7,11 +7,10 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
-// scripts.js
 
+// Suaviza o scroll para âncoras internas
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('a[href^="#"]');
-
     links.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
