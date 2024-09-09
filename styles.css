@@ -7,8 +7,8 @@ body {
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #006400; /* Verde escuro representando a Amazônia */
-    color: white;
+    background-color: #0f0064; /* Verde escuro representando a Amazônia */
+    color: rgba(255, 255, 255, 0);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    max-height: 60px;
+    max-height: 10px;
 }
 
 .main-nav ul {
@@ -56,10 +56,10 @@ header {
 }
 
 .cta-button .btn {
-    background-color: #FF6347; /* Tom de vermelho representando o Cerrado */
-    color: white;
-    padding: 0.5rem 1rem;
+    background-color: #f5250000; /* Tom de vermelho representando o Cerrado */
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 0.2rem 0.2rem;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -89,7 +89,7 @@ h1, h2 {
 /* Estilo para imagens */
 img {
     border-radius: 15px; /* Bordas arredondadas */
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
 }
 
@@ -104,8 +104,43 @@ ul {
 }
 
 ul li {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    background-color: #e0f7fa; /* Tom de azul claro representando a Mata Atlântica */
-    border-radius: 5px;
+    margin: 0.2rem 0;
+    padding: 0.2rem;
+    background-color: #e4212100; /* Tom de azul claro representando a Mata Atlântica */
+    border-radius: 2px;
+}
+
+/* Estilos para cores dos biomas */
+.mata-atlantica {
+    background-color: #e0e6fa00; /* Tom de azul claro */
+    color: #00695c; /* Verde escuro */
+}
+
+.pampa {
+    background-color: #fbe9e7; /* Tom de marrom claro */
+    color: #6d4c41; /* Marrom escuro */
+}
+
+.cerrado {
+    background-color: #fff3e0; /* Tom de amarelo claro */
+    color: #e65100; /* Laranja intenso */
+}
+
+/* Estilos para os quadros/tópicos */
+.section-quadros {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.section-quadros div {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-quadros h3 {
+    text-align: center;
+    font-weight: bold;
 }
