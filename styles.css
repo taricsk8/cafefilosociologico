@@ -29,13 +29,14 @@ header {
 }
 
 .logo img {
-    max-height: 10px;
+    max-height: 150px;
+    max-width: 300px; /* Define um limite para a largura */
 }
 
 .main-nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 10;
     display: flex;
 }
 
@@ -44,7 +45,7 @@ header {
 }
 
 .main-nav a {
-    color: white;
+    color: rgb(236, 235, 235);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -56,17 +57,58 @@ header {
 }
 
 .cta-button .btn {
-    background-color: #f5250000; /* Tom de vermelho representando o Cerrado */
-    color: rgb(255, 255, 255);
+    background-image: url(''); /* Substitua por uma imagem relacionada a biomas */
+    background-size: cover;
+    background-position: left;
+    color: #ffffff;
     text-decoration: none;
-    padding: 0.2rem 0.2rem;
-    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 10px 6px rgb(255, 0, 0);
+    position: relative;
+    overflow: hidden;
 }
 
 .cta-button .btn:hover {
-    background-color: #FF4500; /* Vermelho mais intenso para hover */
+    background-color: rgb(248, 3, 3); /* Escurece a imagem no hover */
+    transform: scale(1.05);
+}
+
+.cta-button .btn-text {
+    z-index: 1;
+    position: relative;
+}
+
+.cta-button .btn:before {
+    content: "";
+    background-image: url('tree-icon.png'); /* Ícone de uma árvore, por exemplo */
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.cta-button .btn:after {
+    content: "";
+    background-image: url('leaf-icon.png'); /* Outro ícone, como uma folha */
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
 }
 
 /* Efeito para o cabeçalho ao rolar a página */
@@ -106,6 +148,9 @@ ul {
 ul li {
     margin: 0.2rem 0;
     padding: 0.2rem;
+<<<<<<< HEAD
+    background-color: #e4212100; /* Tom de azul
+=======
     background-color: #e4212100; /* Tom de azul claro representando a Mata Atlântica */
     border-radius: 2px;
 }
@@ -145,3 +190,4 @@ ul li {
     font-weight: bold;
 }
 
+>>>>>>> f542cc2c24c55afef60f90bf1350d093f13a92e8
