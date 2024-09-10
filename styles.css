@@ -148,4 +148,41 @@ ul {
 ul li {
     margin: 0.2rem 0;
     padding: 0.2rem;
-    background-color: #e4212100; /* Tom de azul
+    background-color: #e4212100; /* Tom de azul claro representando a Mata Atlântica */
+    border-radius: 2px;
+}
+
+/* Estilos para cores dos biomas */
+.mata-atlantica {
+    background-color: #e0e6fa00; /* Tom de azul claro */
+    color: #00695c; /* Verde escuro */
+}
+
+.pampa {
+    background-color: #fbe9e7; /* Tom de marrom claro */
+    color: #6d4c41; /* Marrom escuro */
+}
+
+.cerrado {
+    background-color: #fff3e0; /* Tom de amarelo claro */
+    color: #e65100; /* Laranja intenso */
+}
+
+/* Estilos para os quadros/tópicos */
+.section-quadros {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.section-quadros div {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-quadros h3 {
+    text-align: center;
+    font-weight: bold;
+}
