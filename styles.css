@@ -7,13 +7,15 @@ body {
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #0f0064; /* Verde escuro representando a Amazônia */
-    color: rgba(255, 255, 255, 0);
-    padding: 1rem 0;
+    background-color: #0f0064;
+    /* Verde escuro representando a Amazônia */
+    color: rgb(255, 255, 255);
+    padding: 0,8rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, box-shadow 0.3s;
     z-index: 1000;
@@ -29,8 +31,9 @@ header {
 }
 
 .logo img {
-    max-height: 150px;
-    max-width: 300px; /* Define um limite para a largura */
+    max-height: 100px;
+    max-width:100PX;
+    /* Define um limite para a largura */
 }
 
 .main-nav ul {
@@ -57,7 +60,8 @@ header {
 }
 
 .cta-button .btn {
-    background-image: url(''); /* Substitua por uma imagem relacionada a biomas */
+    background-image: url('');
+    /* Substitua por uma imagem relacionada a biomas */
     background-size: cover;
     background-position: left;
     color: #ffffff;
@@ -76,7 +80,8 @@ header {
 }
 
 .cta-button .btn:hover {
-    background-color: rgb(248, 3, 3); /* Escurece a imagem no hover */
+    background-color: rgb(248, 3, 3);
+    /* Escurece a imagem no hover */
     transform: scale(1.05);
 }
 
@@ -87,7 +92,8 @@ header {
 
 .cta-button .btn:before {
     content: "";
-    background-image: url('tree-icon.png'); /* Ícone de uma árvore, por exemplo */
+    background-image: url('tree-icon.png');
+    /* Ícone de uma árvore, por exemplo */
     background-size: 50px 50px;
     width: 50px;
     height: 50px;
@@ -100,7 +106,8 @@ header {
 
 .cta-button .btn:after {
     content: "";
-    background-image: url('leaf-icon.png'); /* Outro ícone, como uma folha */
+    background-image: url();
+    /* Outro ícone, como uma folha */
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -120,17 +127,21 @@ header.scrolled {
 /* Estilos para o conteúdo */
 section {
     padding: 2rem;
-    margin-top: 5rem; /* Adiciona espaço para o cabeçalho fixo */
+    margin-top: 5rem;
+    /* Adiciona espaço para o cabeçalho fixo */
 }
 
-h1, h2 {
-    color: #005f6a; /* Cor representando o Pantanal */
+h1,
+h2 {
+    color: #005f6a;
+    /* Cor representando o Pantanal */
     font-weight: 600;
 }
 
 /* Estilo para imagens */
 img {
-    border-radius: 15px; /* Bordas arredondadas */
+    border-radius: 15px;
+    /* Bordas arredondadas */
     max-width: 10%;
     height: auto;
 }
@@ -148,24 +159,33 @@ ul {
 ul li {
     margin: 0.2rem 0;
     padding: 0.2rem;
+    <<<<<<< HEAD background-color: #e4212100;
+    /* Tom de azul
+=======
     background-color: #e4212100; /* Tom de azul claro representando a Mata Atlântica */
     border-radius: 2px;
 }
 
 /* Estilos para cores dos biomas */
 .mata-atlantica {
-    background-color: #e0e6fa00; /* Tom de azul claro */
-    color: #00695c; /* Verde escuro */
+    background-color: #e0e6fa00;
+    /* Tom de azul claro */
+    color: #00695c;
+    /* Verde escuro */
 }
 
 .pampa {
-    background-color: #fbe9e7; /* Tom de marrom claro */
-    color: #6d4c41; /* Marrom escuro */
+    background-color: #fbe9e7;
+    /* Tom de marrom claro */
+    color: #6d4c41;
+    /* Marrom escuro */
 }
 
 .cerrado {
-    background-color: #fff3e0; /* Tom de amarelo claro */
-    color: #e65100; /* Laranja intenso */
+    background-color: #fff3e0;
+    /* Tom de amarelo claro */
+    color: #e65100;
+    /* Laranja intenso */
 }
 
 /* Estilos para os quadros/tópicos */
@@ -186,3 +206,4 @@ ul li {
     text-align: center;
     font-weight: bold;
 }
+
