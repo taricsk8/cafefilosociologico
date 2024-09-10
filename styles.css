@@ -10,13 +10,12 @@ header {
     background-color: #0f0064;
     /* Verde escuro representando a Amazônia */
     color: rgb(255, 255, 255);
-    padding: 0,8rem 0;
+    padding: 0.10rem 0; /* Corrigido o separador decimal */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0);
     transition: background-color 0.3s, box-shadow 0.3s;
     z-index: 1000;
 }
@@ -27,24 +26,19 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1rem;    
 }
 
 .logo img {
-<<<<<<< HEAD
     max-height: 100px;
-    max-width:100PX;
+    max-width: 100px; /* Corrigido o valor */
     /* Define um limite para a largura */
-=======
-    max-height: 150px;
-    max-width: 300px; /* Define um limite para a largura */
->>>>>>> bd4699fa3cffcaf3ca5bf0c3970bc2849d03e508
 }
 
 .main-nav ul {
     list-style: none;
     margin: 5px;
-    padding: 10;
+    padding: 10px; /* Corrigido o valor sem unidade */
     display: flex;
 }
 
@@ -65,12 +59,8 @@ header {
 }
 
 .cta-button .btn {
-<<<<<<< HEAD
-    background-image: url('');
+    background-image: url('LUIS\ .png')
     /* Substitua por uma imagem relacionada a biomas */
-=======
-    background-image: url(''); /* Substitua por uma imagem relacionada a biomas */
->>>>>>> bd4699fa3cffcaf3ca5bf0c3970bc2849d03e508
     background-size: cover;
     background-position: left;
     color: #ffffff;
@@ -89,12 +79,8 @@ header {
 }
 
 .cta-button .btn:hover {
-<<<<<<< HEAD
     background-color: rgb(248, 3, 3);
     /* Escurece a imagem no hover */
-=======
-    background-color: rgb(248, 3, 3); /* Escurece a imagem no hover */
->>>>>>> bd4699fa3cffcaf3ca5bf0c3970bc2849d03e508
     transform: scale(1.05);
 }
 
@@ -105,12 +91,8 @@ header {
 
 .cta-button .btn:before {
     content: "";
-<<<<<<< HEAD
     background-image: url('tree-icon.png');
     /* Ícone de uma árvore, por exemplo */
-=======
-    background-image: url('tree-icon.png'); /* Ícone de uma árvore, por exemplo */
->>>>>>> bd4699fa3cffcaf3ca5bf0c3970bc2849d03e508
     background-size: 50px 50px;
     width: 50px;
     height: 50px;
@@ -123,12 +105,8 @@ header {
 
 .cta-button .btn:after {
     content: "";
-<<<<<<< HEAD
-    background-image: url();
+    background-image: url('');
     /* Outro ícone, como uma folha */
-=======
-    background-image: url('leaf-icon.png'); /* Outro ícone, como uma folha */
->>>>>>> bd4699fa3cffcaf3ca5bf0c3970bc2849d03e508
     background-size: 40px 40px;
     width: 40px;
     height: 40px;
@@ -163,7 +141,7 @@ h2 {
 img {
     border-radius: 15px;
     /* Bordas arredondadas */
-    max-width: 10%;
+    max-width: 10%; /* Mantido conforme original */
     height: auto;
 }
 
@@ -180,14 +158,6 @@ ul {
 ul li {
     margin: 0.2rem 0;
     padding: 0.2rem;
-<<<<<<< HEAD
-    <<<<<<< HEAD background-color: #e4212100;
-    /* Tom de azul
-=======
-<<<<<<< HEAD
-    background-color: #e4212100; /* Tom de azul
->>>>>>> bd4699fa3cffcaf3ca5bf0c3970bc2849d03e508
-=======
     background-color: #e4212100; /* Tom de azul claro representando a Mata Atlântica */
     border-radius: 2px;
 }
@@ -232,5 +202,3 @@ ul li {
     text-align: center;
     font-weight: bold;
 }
-
->>>>>>> f542cc2c24c55afef60f90bf1350d093f13a92e8
