@@ -2,12 +2,13 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #dccda9; /* Cor de fundo */
+    color: #0e3600; /* Cor dos textos */
 }
 
 header {
-    background-color: #0f0064;
-    color: white;
+    background-color: #0e3600; /* Cor do header */
+    color: #dccda9; /* Cor do texto no header */
     padding: 0.5rem 0;
     position: fixed;
     width: 100%;
@@ -15,19 +16,18 @@ header {
     left: 0;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    text-align: center; /* Centraliza o conteúdo dentro do header */
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center; /* Centraliza a logo e o menu */
 }
 
 .logo img {
-    max-height: 80px;
+    width: 30%; /* Tamanho ajustado da logo */
+    margin-bottom: 10px; /* Espaço entre a logo e o menu */
 }
 
 /* Menu de navegação */
@@ -36,15 +36,18 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row; /* Garante o alinhamento horizontal */
+    justify-content: center; /* Centraliza os itens do menu */
     flex-wrap: wrap;
 }
 
 .main-nav li {
     margin: 0 1rem;
+    position: relative; /* Necessário para submenus */
 }
 
 .main-nav a {
-    color: #ecebeb;
+    color: #dccda9; /* Cor dos links no menu */
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -55,9 +58,10 @@ header {
     text-decoration: underline;
 }
 
+/* Botão de inscrição */
 .cta-button .btn {
-    background-color: #e42121;
-    color: white;
+    background-color: #0e3600; /* Cor do botão */
+    color: #dccda9; /* Cor do texto no botão */
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
     font-weight: bold;
@@ -69,7 +73,7 @@ header {
 }
 
 .cta-button .btn:hover {
-    background-color: #f80303;
+    background-color: #005f6a; /* Cor de hover do botão */
     transform: scale(1.05);
 }
 
@@ -84,57 +88,40 @@ section {
 }
 
 h1, h2 {
-    color: #005f6a;
-    font-weight: 600;
+    color: #0e3600; /* Cor dos títulos */
+    text-align: center;
 }
 
+.banner-image {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: block;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Estilos de coordenadores */
 .centered {
     text-align: center;
 }
 
-/* Quadros (responsivos) */
-.section-quadros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.quadro {
-    background-color: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
-}
-
-/* Imagens dos coordenadores */
-.coordenador img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
 .coordenador {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
+.coordenador img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
 
-    .main-nav ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .main-nav li {
-        margin: 0.5rem 0;
-    }
+.coordenador p {
+    font-size: 1.1rem;
 }
