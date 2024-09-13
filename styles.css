@@ -10,7 +10,7 @@ header {
     background-color: #0e3600; /* Cor do header */
     color: #dccda9; /* Cor do texto no header */
     padding: 0.5rem 0;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     top: 0;
     left: 0;
@@ -59,10 +59,17 @@ header {
 }
 
 /* Botão de inscrição */
+.cta-button {
+    position: fixed;
+    top: 10px; /* Distância do topo da página */
+    right: 10px; /* Distância do lado direito da página */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
 .cta-button .btn {
-    background-color: #0e3600; /* Cor do botão */
+    background-color: #081304; /* Cor do botão */
     color: #dccda9; /* Cor do texto no botão */
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 30px;
     font-weight: bold;
     font-size: 1.2rem;
@@ -70,7 +77,9 @@ header {
     display: inline-block;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
+
 
 .cta-button .btn:hover {
     background-color: #005f6a; /* Cor de hover do botão */
@@ -83,8 +92,8 @@ header {
 
 /* Seções e títulos */
 section {
-    padding: 2rem;
-    margin-top: 5rem;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 h1, h2 {
@@ -93,11 +102,13 @@ h1, h2 {
 }
 
 .banner-image {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     display: block;
 }
+
 
 p {
     text-align: justify;
