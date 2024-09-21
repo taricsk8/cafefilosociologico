@@ -10,7 +10,6 @@ header {
     background-color: #0e3600; /* Cor do header */
     color: #dccda9; /* Cor do texto no header */
     padding: 0.5rem 0;
-    /*position: fixed;*/
     width: 100%;
     top: 0;
     left: 0;
@@ -26,8 +25,15 @@ header {
 }
 
 .logo img {
-    width: 30%; /* Tamanho ajustado da logo */
+    width: 40%; /* Aumenta o tamanho da logo */
     margin-bottom: 10px; /* Espaço entre a logo e o menu */
+}
+
+/* Ajustes de responsividade para telas maiores */
+@media (min-width: 1024px) {
+    .logo img {
+        width: 25%; /* Aumenta o tamanho da logo para telas maiores */
+    }
 }
 
 /* Menu de navegação */
@@ -80,7 +86,6 @@ header {
     text-decoration: none;
 }
 
-
 .cta-button .btn:hover {
     background-color: #005f6a; /* Cor de hover do botão */
     transform: scale(1.05);
@@ -109,7 +114,6 @@ h1, h2 {
     display: block;
 }
 
-
 p {
     text-align: justify;
     line-height: 1.6;
@@ -135,4 +139,55 @@ p {
 
 .coordenador p {
     font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0e3600;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container h3 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #dccda9; /* Cor dos links no menu */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* Footer logo responsiveness */
+.footer-logos {
+    display: flex;
+    justify-content: space-between; /* Espaçamento igual entre logos */
+    align-items: center;
+    max-width: 80%; /* Limita a largura do container para espaçamento maior */
+    margin: 0 auto; /* Centraliza o container de logos */
+}
+
+.footer-logo {
+    height: 60px; /* Define a altura das logos */
+    width: auto;  /* Mantém a proporção da largura */
+    margin: 0 40px; /* Espaça as logos entre si */
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    .footer-logos {
+        justify-content: space-around; /* As logos se aproximam mais em telas menores */
+    }
+
+    .footer-logo {
+        height: 40px; /* Ajusta o tamanho para telas menores */
+        margin: 0 20px; /* Reduz o espaçamento entre logos */
+    }
+
+    .logo img {
+        width: 50%; /* Aumenta a logo para telas menores */
+    }
+
+    .banner-image {
+        width: 80%; /* Reduz o tamanho do banner para telas menores */
+    }
 }
