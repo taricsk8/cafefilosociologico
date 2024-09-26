@@ -7,26 +7,53 @@ body {
 }
 
 header {
-    background-color: #0e3600; /* Cor do header */
-    color: #dccda9; /* Cor do texto no header */
+    background-color: #0e3600; /* Cor de fundo verde */
+    position: relative;
     padding: 0.5rem 0;
     width: 100%;
+    height: 100vh; /* Define o header para ocupar 100% da altura da viewport */
     top: 0;
     left: 0;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    text-align: center; /* Centraliza o conteúdo dentro do header */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    background-image: url('back_img.png'); /* Caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir o header */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    opacity: 0.2; /* Define a opacidade da imagem em 20% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo do header */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza a logo e o menu */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100%; /* Garante que o container ocupe toda a altura do header */
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .logo img {
-    width: 40%; /* Aumenta o tamanho da logo */
-    margin-bottom: 10px; /* Espaço entre a logo e o menu */
+    max-width: 100%; /* Garante que a logo seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 /* Ajustes de responsividade para telas maiores */
@@ -36,7 +63,13 @@ header {
     }
 }
 
-/* Menu de navegação */
+
+.main-nav {
+    position: absolute; /* Coloca o menu em relação ao header */
+    bottom: 20px; /* Distância da base do header */
+    width: 100%; /* Largura total para o menu */
+}
+
 .main-nav ul {
     list-style: none;
     margin: 0;
