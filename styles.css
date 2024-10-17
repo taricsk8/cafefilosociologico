@@ -224,3 +224,136 @@ footer {
         width: 80%; /* Reduz o tamanho do banner para telas menores */
     }
     ./* Estilo do container do carrossel */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+    }
+    
+    .carrossel {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        perspective: 1000px; /* Efeito 3D */
+    }
+    
+    .fotos {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+    }
+    
+    .foto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .foto.ativo {
+        opacity: 1;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    #coordenadores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .coordenador {
+        margin: 20px 0;
+    }
+    
+    .coordenador img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .coordenador p {
+        font-size: 16px;
+        margin: 5px 0;
+        max-width: 600px;
+    }
+    /* Centralização e estilo da seção */
+.centered {
+    text-align: center;
+    font-family: 'SeuNomeDeFonte', sans-serif; /* Utilize a fonte que já está sendo usada no seu site */
+    margin: 20px;
+}
+
+#programacao {
+    font-family: 'Arial', sans-serif; /* Certifique-se de usar a mesma fonte que seu site */
+    margin: 20px;
+}
+
+.programa-quadro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+
+.programa-quadro h3 {
+    color: #0056b3; /* Cor diferenciada para o título de cada dia */
+}
+
+.programa-quadro ul li strong {
+    color: #007bff;
+}
