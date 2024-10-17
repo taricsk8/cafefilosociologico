@@ -1,4 +1,11 @@
-// Adiciona uma classe ao cabeçalho quando o usuário rola a página
 window.addEventListener('scroll', function() {
     const header = document.getElementById('header');
-    if (window.scrollY >
+    
+    // Verifica se a rolagem vertical é maior que 0
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
